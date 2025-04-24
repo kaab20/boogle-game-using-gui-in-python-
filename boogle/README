@@ -1,0 +1,13 @@
+Hi,
+we have decided to add an incredible feature for our game,
+we think that for each game in this world, u have to sign up in it to play that game,
+so we have created a simple login structure;
+
+how did we implement it?:
+we built a json file that stores all usernames of players with their passwords with all previous game scores for that
+specific player, at the beginning we start with an empty json,
+then, when a player enters his credentials (username+password), we check if he played before and his credentials
+are correct (matches what's in the json file), if that's the case, we start appending to his
+existing credentials (updating game scores list), otherwise we add his credentials to our json with an empty list of game scores.
+it's worth mentioning that when an existing player enters the game again, the game displays the scores
+of the previous game retries in a chart at the right side of the screen.
